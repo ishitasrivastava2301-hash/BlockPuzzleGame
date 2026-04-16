@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Block Puzzle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="hero">
+      <div>
+        <h1>Colorful Block Puzzle</h1>
+        <p>Arrange the blocks into the puzzle board. Drag the bright pieces into place visually and enjoy the colorful design.</p>
+      </div>
+      <div class="hero-badge">Unlimited pieces • Clear full rows + columns</div>
+    </header>
+
+    <main class="container">
+      <section class="game-board">
+        <div class="game-actions">
+          <div>
+            <h2>Puzzle Board</h2>
+            <p class="board-instruction">Drag a shape onto the board. Full rows and columns clear automatically.</p>
+          </div>
+          <button id="resetButton" type="button">Reset Board</button>
+        </div>
+        <div class="board-grid" id="boardGrid">
+          <div class="cell board-cell" data-index="0"></div>
+          <div class="cell board-cell" data-index="1"></div>
+          <div class="cell board-cell" data-index="2"></div>
+          <div class="cell board-cell" data-index="3"></div>
+          <div class="cell board-cell" data-index="4"></div>
+          <div class="cell board-cell" data-index="5"></div>
+          <div class="cell board-cell" data-index="6"></div>
+          <div class="cell board-cell" data-index="7"></div>
+          <div class="cell board-cell" data-index="8"></div>
+          <div class="cell board-cell" data-index="9"></div>
+          <div class="cell board-cell" data-index="10"></div>
+          <div class="cell board-cell" data-index="11"></div>
+          <div class="cell board-cell" data-index="12"></div>
+          <div class="cell board-cell" data-index="13"></div>
+          <div class="cell board-cell" data-index="14"></div>
+          <div class="cell board-cell" data-index="15"></div>
+          <div class="cell board-cell" data-index="16"></div>
+          <div class="cell board-cell" data-index="17"></div>
+          <div class="cell board-cell" data-index="18"></div>
+          <div class="cell board-cell" data-index="19"></div>
+          <div class="cell board-cell" data-index="20"></div>
+          <div class="cell board-cell" data-index="21"></div>
+          <div class="cell board-cell" data-index="22"></div>
+          <div class="cell board-cell" data-index="23"></div>
+          <div class="cell board-cell" data-index="24"></div>
+        </div>
+        <div class="game-status">
+          <span id="statusText">Drop a shape to start.</span>
+          <span id="scoreText">Score: 0</span>
+        </div>
+      </section>
+
+      <section class="piece-panel">
+        <h2>Available Shapes</h2>
+        <div class="piece-grid">
+          <div class="piece block block-orange" draggable="true" data-piece="line">
+            <span class="piece-title">Line</span>
+            <span class="piece-size">4 cells</span>
+          </div>
+          <div class="piece block block-yellow" draggable="true" data-piece="square">
+            <span class="piece-title">Square</span>
+            <span class="piece-size">2×2</span>
+          </div>
+          <div class="piece block block-pink" draggable="true" data-piece="l">
+            <span class="piece-title">L-Shape</span>
+            <span class="piece-size">4 cells</span>
+          </div>
+          <div class="piece block block-green" draggable="true" data-piece="t">
+            <span class="piece-title">T-Shape</span>
+            <span class="piece-size">4 cells</span>
+          </div>
+          <div class="piece block block-purple" draggable="true" data-piece="z">
+            <span class="piece-title">Z-Shape</span>
+            <span class="piece-size">4 cells</span>
+          </div>
+          <div class="piece block block-blue" draggable="true" data-piece="wide">
+            <span class="piece-title">3×1</span>
+            <span class="piece-size">3 cells</span>
+          </div>
+        </div>
+        <p class="note">Drag any shape onto the board. Unlimited shapes are available, and full rows/columns clear automatically.</p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
