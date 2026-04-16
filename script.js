@@ -83,7 +83,16 @@ function clearFullLines() {
     }
   });
 
-  clearedCells.forEach(clearCell);
+  clearedCells.forEach((cellIndex) => {
+    boardCells[cellIndex].classList.add('clearing');
+  });
+
+  if (clearedCells.size > 0) {
+    setTimeout(() => {
+      clearedCells.forEach(clearCell);
+    }, 180);
+  }
+
   return clearedCells.size;
 }
 
