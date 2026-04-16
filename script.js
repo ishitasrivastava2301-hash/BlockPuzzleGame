@@ -35,7 +35,7 @@ function clearCell(index) {
   const cell = boardCells[index];
   const color = cell.dataset.piece;
   cell.removeAttribute('data-piece');
-  cell.classList.remove('filled', `block-${color}`);
+  cell.classList.remove('filled', `block-${color}`, 'clearing');
 }
 
 function countEmptyCells() {
