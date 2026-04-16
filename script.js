@@ -8,8 +8,9 @@ const resetButton = document.getElementById('resetButton');
 const shapes = {
   line: { offsets: [[0, 0], [0, 1], [0, 2], [0, 3]], color: 'orange', label: 'Line' },
   square: { offsets: [[0, 0], [0, 1], [1, 0], [1, 1]], color: 'yellow', label: 'Square' },
+  two: { offsets: [[0, 0], [0, 1]], color: 'cyan', label: '2x1' },
   l: { offsets: [[0, 0], [1, 0], [2, 0], [2, 1]], color: 'pink', label: 'L-Shape' },
-  t: { offsets: [[0, 1], [1, 0], [1, 1], [1, 2]], color: 'green', label: 'T-Shape' },
+  t: { offsets: [[0, 0], [0, 1], [0, 2], [1, 1]], color: 'green', label: 'T-Shape' },
   z: { offsets: [[0, 0], [0, 1], [1, 1], [1, 2]], color: 'purple', label: 'Z-Shape' },
   wide: { offsets: [[0, 0], [0, 1], [0, 2]], color: 'blue', label: '3x1' },
 };
@@ -174,7 +175,7 @@ function handleDrop(event) {
 function handleReset() {
   boardCells.forEach((cell) => {
     cell.removeAttribute('data-piece');
-    cell.classList.remove('filled', 'block-blue', 'block-pink', 'block-yellow', 'block-green', 'block-purple', 'block-orange');
+    cell.classList.remove('filled', 'block-blue', 'block-pink', 'block-yellow', 'block-green', 'block-purple', 'block-orange', 'block-cyan');
   });
   score = 0;
   updateDisplay('Board reset. Drop shapes to start again.');

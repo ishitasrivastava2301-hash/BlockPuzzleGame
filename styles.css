@@ -11,6 +11,7 @@
   --green: #34d399;
   --purple: #a78bfa;
   --orange: #fb923c;
+  --cyan: #22d3ee;
 }
 
 * {
@@ -121,6 +122,7 @@ body {
 .board-cell.filled.block-green { background: linear-gradient(135deg, #34d399, #22c55e); }
 .board-cell.filled.block-purple { background: linear-gradient(135deg, #a78bfa, #8b5cf6); }
 .board-cell.filled.block-orange { background: linear-gradient(135deg, #fb923c, #f97316); }
+.board-cell.filled.block-cyan { background: linear-gradient(135deg, #22d3ee, #06b6d4); }
 
 .game-actions {
   display: flex;
@@ -207,6 +209,7 @@ body {
 .block-green { background: linear-gradient(135deg, #34d399, #22c55e); }
 .block-purple { background: linear-gradient(135deg, #a78bfa, #8b5cf6); }
 .block-orange { background: linear-gradient(135deg, #fb923c, #f97316); }
+.block-cyan { background: linear-gradient(135deg, #22d3ee, #06b6d4); }
 
 .piece-grid {
   display: grid;
